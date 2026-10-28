@@ -1,0 +1,26 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Node & Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/data/uploads/*
+!backend/data/uploads/.gitkeep
+backend/data/chroma/*
+!backend/data/chroma/.gitkeep
+
+# Environment files
+.env
+.env.local
+
