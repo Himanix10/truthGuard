@@ -1,3 +1,9 @@
 fastapi
 uvicorn[standard]
 python-multipart
+PyMuPDF
+networkx
+langgraph
+google-genai
+python-dotenv
+

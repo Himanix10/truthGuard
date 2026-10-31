@@ -1,0 +1,229 @@
+{
+  "timestamp": "2026-10-29 15:24:27",
+  "total_tests": 23,
+  "passed_tests": 23,
+  "failed_tests": 0,
+  "categories": {
+    "Temporal Supersession": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "Scope Conflict": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "Anti-Naive Recency": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "Insufficient Evidence": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "Document Comparator": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "Critic Adversarial": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "LLM Failover": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    }
+  },
+  "test_details": [
+    {
+      "category": "Temporal Supersession",
+      "name": "Outcome classified as RESOLVED",
+      "expected": "RESOLVED",
+      "actual": "RESOLVED",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Temporal Supersession",
+      "name": "Governing answer uses AES-256 standard",
+      "expected": "AES-256",
+      "actual": "AES-256",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Temporal Supersession",
+      "name": "Explicit supersession lineage documented in resolution basis",
+      "expected": "True",
+      "actual": "True",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Temporal Supersession",
+      "name": "Citations present and non-empty",
+      "expected": "True",
+      "actual": "True",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Scope Conflict",
+      "name": "Contradictory scopes produce CONFLICT outcome",
+      "expected": "CONFLICT",
+      "actual": "CONFLICT",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Scope Conflict",
+      "name": "Withholds unified answer on unresolvable clash (0% hallucination)",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Scope Conflict",
+      "name": "Surfaces granular contradictory evidence items",
+      "expected": "True",
+      "actual": "True",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Scope Conflict",
+      "name": "Detailed audit explanation provided for human reviewers",
+      "expected": "True",
+      "actual": "True",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Anti-Naive Recency",
+      "name": "Does NOT silently overwrite 2023 policy based on date alone",
+      "expected": "CONFLICT or ABSTAIN",
+      "actual": "CONFLICT",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Anti-Naive Recency",
+      "name": "Conflict detector flags unlinked temporal contradiction",
+      "expected": "True",
+      "actual": "True",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Insufficient Evidence",
+      "name": "Out-of-domain query triggers ABSTAIN",
+      "expected": "ABSTAIN",
+      "actual": "ABSTAIN",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Insufficient Evidence",
+      "name": "Actionable abstention reason returned",
+      "expected": "True",
+      "actual": "True",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Insufficient Evidence",
+      "name": "Zero hallucinated text in final answer",
+      "expected": "",
+      "actual": "",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Document Comparator",
+      "name": "Superseded pair outcome is RESOLVED",
+      "expected": "RESOLVED",
+      "actual": "RESOLVED",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Document Comparator",
+      "name": "Identifies explicit SUPERSEDES relationship",
+      "expected": "SUPERSEDES",
+      "actual": "SUPERSEDES",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Document Comparator",
+      "name": "Scope clash pair outcome is CONFLICT",
+      "expected": "CONFLICT",
+      "actual": "CONFLICT",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Document Comparator",
+      "name": "Extracts distinct policy difference records",
+      "expected": "True",
+      "actual": "True",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Critic Adversarial",
+      "name": "Flags completely fabricated/unsupported security claim",
+      "expected": "FLAG",
+      "actual": "FLAG",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Critic Adversarial",
+      "name": "Detects missing document citation tags",
+      "expected": "True",
+      "actual": "True",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "Critic Adversarial",
+      "name": "Catches unverified supersession/override assumptions",
+      "expected": "True",
+      "actual": "True",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "LLM Failover",
+      "name": "Successfully loaded 3 tiered API keys into client pool",
+      "expected": "3",
+      "actual": "3",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "LLM Failover",
+      "name": "Primary Key 1 is designated active leader",
+      "expected": "0",
+      "actual": "0",
+      "passed": true,
+      "notes": ""
+    },
+    {
+      "category": "LLM Failover",
+      "name": "Fail-soft protocol triggers without application crash",
+      "expected": "True",
+      "actual": "True",
+      "passed": true,
+      "notes": ""
+    }
+  ]
+}
